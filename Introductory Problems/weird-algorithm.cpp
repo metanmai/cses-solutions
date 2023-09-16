@@ -2,7 +2,7 @@
 
 void solve()
 {
-	int i, j, n, m;
+	ll i, j, n, m;
 	cin >> n;
 
 	while(n != 1)
