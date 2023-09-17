@@ -61,6 +61,13 @@ int mpow(int base, int exp) {
   }
   return result;
 }
+struct TreeNode {
+	int val;
+	TreeNode *left, *right;
+	TreeNode() : val(0), left(nullptr), right(nullptr) {}
+	TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+	TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
 
 //void ipgraph(int n, int m) {
 //	int i, u, v;
