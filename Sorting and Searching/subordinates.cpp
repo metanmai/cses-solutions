@@ -21,8 +21,7 @@ void solve()
 	map<int, vector<int>> adj;
 	Fo(i, 2, n + 1)
 	{
-		cin >> m;
-		adj[m].pb(i);
+		adj[si(m)].pb(i);
 	}
 
 	vi ans(n + 1);
