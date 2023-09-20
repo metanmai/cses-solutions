@@ -1,4 +1,6 @@
 #include "../solution-template.hpp"
+// Time Complexity: O(N)
+// Space Complexity: O(1)
 
 void solve()
 {
