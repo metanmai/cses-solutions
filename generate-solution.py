@@ -11,7 +11,7 @@ template_file = "solution-template.hpp"
 
 input_dir = os.path.dirname(input_file)
 
-output_file = os.path.join(input_dir, "solution.cpp")
+output_file = "solution.cpp"
 
 with open(input_file, 'r') as f:
     input_lines = f.readlines()
