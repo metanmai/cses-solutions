@@ -123,9 +123,9 @@
 #endif
 using namespace std;
 #define gc getchar_unlocked
-#define fo(i,n) for(i=0;i<n;i++)
-#define Fo(i,k,n) for(i=k;k<n?i<n:i>n;k<n?i+=1:i-=1)
-#define ll long long
+#define fo(i,n) for(int i = 0; i < n; i++)
+#define Fo(i,k,n) for(int i = k; k < n ? i < n : i > n; k < n ? i += 1 : i -= 1)
+#define l2 long long
 #define si(x)	scanf("%d",&x)
 #define sl(x)	scanf("%lld",&x)
 #define ss(s)	scanf("%s",s)
@@ -144,9 +144,9 @@ using namespace std;
 #define PI 3.1415926535897932384626
 #define endl '\n'
 typedef pair<int, int>	pii;
-typedef pair<ll, ll>	pl;
+typedef pair<l2, l2>	pl;
 typedef vector<int>		vi;
-typedef vector<ll>		vl;
+typedef vector<l2>		vl;
 typedef vector<pii>		vpii;
 typedef vector<pl>		vpl;
 typedef vector<vi>		vvi;
@@ -173,8 +173,8 @@ int mpow(int base, int exp) {
   base %= MOD;
   int result = 1;
   while (exp > 0) {
-    if (exp & 1) result = ((ll)result * base) % MOD;
-    base = ((ll)base * base) % MOD;
+    if (exp & 1) result = ((l2)result * base) % MOD;
+    base = ((l2)base * base) % MOD;
     exp >>= 1;
   }
   return result;
