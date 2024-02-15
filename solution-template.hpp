@@ -152,10 +152,12 @@ typedef vector<pl>		vpl;
 typedef vector<vi>		vvi;
 typedef vector<vl>		vvl;
 mt19937_64 rang(chrono::high_resolution_clock::now().time_since_epoch().count());
+
 int rng(int lim) {
 	uniform_int_distribution<int> uid(0,lim-1);
 	return uid(rang);
 }
+
 int mpow(int base, int exp);
 void ipgraph(int n, int m);
 void dfs(int u, int par);
@@ -177,6 +179,7 @@ int mpow(int base, int exp) {
   }
   return result;
 }
+
 struct TreeNode {
 	int val;
 	TreeNode *left, *right;

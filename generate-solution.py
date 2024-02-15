@@ -15,13 +15,16 @@ output_file = "solution.cpp"
 
 with open(input_file, 'r') as f:
     input_lines = f.readlines()
+
+    for i, line in enumerate(input_lines):
+        if 'freopen("output.txt", "w", stdout);' in line:
+            del input_lines[i:i + 3]
+            break
+
     input_code = ''.join(input_lines[1:])
 
 with open(template_file, 'r') as f:
     template_lines = f.readlines()
-
-if len(template_lines) >= 8:
-    template_lines[6:8] = ["#include<bits/stdc++.h>\n"]
 
 modified_code = ''.join(template_lines) + input_code
 
